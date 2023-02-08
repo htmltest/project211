@@ -5,6 +5,10 @@
 body {margin:0; padding:0; font:300 18px/25px Arial, sans-serif; color:#030445; background:#FFFFFF; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; overflow-anchor:none}
 .fonts-loaded body {font-family:Gilroy, sans-serif}
 
+@media (max-width:479px) {
+    body {font-size:14px; line-height:20px}
+}
+
 a {color:#2758A0; text-decoration:none; transition:color 0.2s}
 a:hover {color:#286DD2}
 
@@ -13,71 +17,89 @@ iframe {border:none; max-width:100%}
 
 ::-ms-clear {display:none}
 
-strong, b {font-weight:normal}
+strong, b {font-weight:bold}
 
-h1 {margin:48px 0 40px 0; padding:0; font-weight:bold; font-size:36px; line-height:54px}
+h1 {margin:48px 0 40px 0; padding:0; font-weight:bold; font-size:48px; line-height:58px}
 h2 {margin:0; padding:0; font-weight:bold; font-size:48px; line-height:48px}
 p {margin:10px 0; padding:0}
-ol {margin:40px 0; padding:0; list-style:none; counter-reset:point}
+ol {margin:40px 0; padding:0; list-style:none; counter-reset:point; font-weight:500}
 ol > li {margin:40px 0; padding:0 0 0 40px; position:relative}
-ol > li::before {content:counter(point)'.'; counter-increment:point 1; font-weight:bold; position:absolute; left:0; top:0}
+ol > li::before {content:counter(point)'.'; counter-increment:point 1; position:absolute; left:0; top:0}
 ol > li > p {font-weight:300}
 ol > li > ul {font-weight:300}
-ol > li > ol {margin:20px 0; counter-reset:subpoint}
+ol > li > ol {margin:20px 0; counter-reset:subpoint; font-weight:300}
 ol > li > ol > li {margin:10px 0; padding:0 0 0 50px}
-ol > li > ol > li::before {content:counter(point)'.'counter(subpoint); counter-increment:subpoint 1; font-weight:normal}
+ol > li > ol > li::before {content:counter(point)'.'counter(subpoint)'.'; counter-increment:subpoint 1}
 ol > li > ol > li > ol {margin:10px 0; counter-reset:subsubpoint}
-ol > li > ol > li > ol > li {margin:20px 0; padding:0 0 0 60px}
+ol > li > ol > li > ol > li {margin:10px 0; padding:0 0 0 60px}
 ol > li > ol > li > ol > li:first-child {margin-top:0}
 ol > li > ol > li > ol > li:last-child {margin-bottom:0}
-ol > li > ol > li > ol > li::before {content:counter(point)'.'counter(subpoint)'.'counter(subsubpoint); counter-increment:subsubpoint 1}
+ol > li > ol > li > ol > li::before {content:counter(point)'.'counter(subpoint)'.'counter(subsubpoint)'.'; counter-increment:subsubpoint 1}
 ul {margin:10px 0; padding:0; list-style:none}
 ul > li {margin:10px 0; padding:0 0 0 25px; position:relative}
 ul > li::before {content:""; display:block; position:absolute; left:0; top:13px; width:5px; height:5px; background:#030445; border-radius:50%}
 
-@media (max-width:11199px) {
-    h1 {margin:40px 0; font-size:30px; line-height:45px}
+@media (max-width:1599px) {
+    h1 {font-size:36px; line-height:44px}
+}
+
+@media (max-width:1199px) {
+    h1 {margin:40px 0}
     h2 {font-size:36px; line-height:43px}
-    ol > li > ol {margin-left:-40px}
-    ol > li > ol > li {padding:0 0 0 40px}
+}
+
+@media (max-width:767px) {
+    h1 {font-size:30px; line-height:36px}
 }
 
 @media (max-width:479px) {
-    h1 {margin:40px 0 30px 0; font-size:20px; line-height:30px}
+    h1 {margin:40px 0 30px 0; font-size:24px; line-height:29px}
     h2 {font-size:24px; line-height:29px}
-    ol {margin:30px 0}
-    ol > li {margin:30px 0; padding:0 0 0 30px}
-    ol > li > ol {margin:10px 0; margin-left:-30px}
-    ol > li > ol > li {padding:0 0 0 30px}
-    ul > li {padding:0 0 0 15px}
-    ul > li::before {top:8px}
-    ol > li > ol > li > ol > li {margin:10px 0; padding:0 0 0 40px}
+    ol > li {padding:0 0 0 30px}
+    ol > li > ol {margin-left:-30px}
+    ol > li > ol > li {padding:0 0 0 40px}
+    ol > li > ol > li > ol {margin-left:-40px}
+    ol > li > ol > li > ol > li {padding:0 0 0 50px}
 }
 
 .wrapper {width:100%; position:relative; overflow:hidden}
 
-.text-logo {line-height:0; padding:80px 0 0 0}
-
-@media (max-width:1199px) {
-    .text-logo {padding:40px 0 0 0}
-}
-
-.back-link {margin:40px 0 0 0}
-.back-link a {display:inline-block; vertical-align:top; position:relative; text-decoration:none; color:#FFFFFF; height:56px; font-weight:bold; font-size:16px; line-height:56px; letter-spacing:2px; text-transform:uppercase; padding:0 28px; border-radius:8px; background:#2758A0}
-.back-link a svg {display:inline-block; vertical-align:middle; margin:-2px 20px 0 0; fill:#FFFFFF; width:20px; height:20px}
-.back-link a span {position:relative}
+.text-header {background:#DDF1FF; padding:80px 0 60px 0}
 
 @media (max-width:767px) {
-    .back-link {margin:20px 0 0 0}
+    .text-header {padding:40px 0}
 }
+
+.text-logo {float:right; line-height:0; padding:14px 0 0 0}
 
 @media (max-width:479px) {
-    .back-link a {height:36px; font-size:12px; line-height:36px; padding:0 20px; border-radius:4px}
-    .back-link a::before {border-radius:4px}
-    .back-link a svg {margin:-2px 10px 0 0; width:16px; height:16px}
+    .text-logo {float:none; padding:0}
 }
 
+.back-link {float:left}
+.back-link a {display:inline-block; vertical-align:top; position:relative; text-decoration:none; color:#030445; height:56px; font-weight:bold; font-size:16px; line-height:56px; letter-spacing:2px; text-transform:uppercase; padding:0 28px; border-radius:6px; background:#FFFFFF; transition:color 0.2s, background 0.2s}
+.back-link a:hover {background:#286DD2; color:#FFFFFF}
+.back-link a svg {display:inline-block; vertical-align:middle; margin:-2px 20px 0 0; fill:#030445; width:20px; height:20px; transition:fill 0.2s}
+.back-link a:hover svg {fill:#FFFFFF}
+
+@media (max-width:479px) {
+    .back-link {float:none; margin:20px 0 0 0}
+    .back-link a {height:40px; font-size:12px; line-height:40px; padding:0 16px; border-radius:4px}
+    .back-link a svg {margin:-2px 20px 0 0; width:16px; height:16px}
+}
+
+.text-header h1 {float:left; width:100%; margin:40px 0 0 0}
+
+@media (max-width:1599px) {
+    .text-header h1 {margin:20px 0 0 0}
+}
+
+.text-container {margin:40px 0 0 0; max-width:870px; color:rgba(0, 0, 0, 0.7)}
+.text-container a {color:#2758A0; text-decoration:underline}
+.text-container a:hover {text-decoration:none}
+
 .container {width:1120px; margin:0 auto}
+.container::after {content:""; display:block; clear:both}
 
 @media (max-width:1199px) {
     .container {width:688px}
