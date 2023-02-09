@@ -135,8 +135,8 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
     .welcome {padding:44px 0 40px 0}
     .realme {margin:-4px 0 0 0}
     .welcome-header {font-size:18px; line-height:21px}
-    .welcome-title {margin:24px 0 0 0; font-size:36px; line-height:47px; max-width:300px}
-    .welcome-text {font-size:18px; line-height:27px}
+    .welcome-title {margin:24px 0 0 0; font-size:36px; line-height:47px; text-align:center}
+    .welcome-text {font-size:18px; line-height:27px; text-align:center}
     .welcome-text p {margin:10px 0 0 0}
 }
 
@@ -274,7 +274,7 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
 
 @media (max-width:1199px) {
     .promo-rules {float:none; width:auto}
-    .promo-rules-title {font-size:36px; line-height:44px}
+    .promo-rules-title {font-size:36px; line-height:44px; text-align:center}
     .promo-rules-list {margin:20px 0 0 0}
 }
 
@@ -300,6 +300,7 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
     .promo-form {float:none; width:auto; margin:40px 0 0 0; border-radius:16px; padding:18px}
     .promo-form-content form {margin:32px 0 0 0}
     .promo-form-rules {font-size:18px; line-height:27px; margin:20px 0 0 0}
+    .promo-form-title {text-align:center}
 }
 
 @media (max-width:479px) {
@@ -480,7 +481,7 @@ label.error {display:block; position:absolute; left:0; right:0; top:100%; margin
 .prizes-list-item-text {margin:37px 0 0 0; font-size:26px; line-height:31px}
 
 @media (max-width:1199px) {
-    .prizes-title {font-size:36px; line-height:44px}
+    .prizes-title {font-size:36px; line-height:44px; text-align:center}
     .prizes-list-item {font-size:24px; line-height:29px}
     .prizes-list-item:nth-child(1) {width:100%}
     .prizes-list-item:nth-child(2) {width:50%}
