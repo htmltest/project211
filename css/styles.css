@@ -174,13 +174,14 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
 
 @media (max-width:767px) {
     .more {background-image:url(../images/more-480.png); background-size:auto 100%}
-    .more-text {font-size:18px; line-height:27px; max-width:300px}
-    .more-link {margin:173px 0 0 0}
+    .more-text {font-size:18px; line-height:27px; max-width:300px; margin-left:20px}
+    .more-link {margin:173px 0 0 20px}
 }
 
 @media (max-width:479px) {
     .more {height:228px; padding:20px 0 0 0; background-image:url(../images/more-320.png)}
-    .more-text {font-size:14px; line-height:21px; max-width:280px}
+    .more .container {margin:0 20px}
+    .more-text {font-size:14px; line-height:21px; max-width:280px; margin-left:0}
     .more-link {margin:78px 0 0 0}
     .more-link a {padding:10px 30px; border-radius:12px; font-size:18px; line-height:27px}
 }
