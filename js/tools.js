@@ -101,6 +101,25 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 1000,
+        pauseOnFocus: false,
+        pauseOnHover: false
+    });
+    
+    $('.more-link a').click(function(e) {
+        $('html, body').animate({'scrollTop': $('.promo').offset().top - 50});
+        e.preventDefault();
+    });
+
 });
 
 function initForm(curForm) {

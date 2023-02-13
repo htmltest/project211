@@ -151,6 +151,40 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
     .welcome-title {margin:20px 0 0 0}
 }
 
+.slider {font-size:0; line-height:0; letter-spacing:-1px; white-space:nowrap; position:relative; overflow:hidden}
+.slider-item {display:inline-block; vertical-align:top; width:100%; white-space:normal; letter-spacing:0}
+
+.more {height:935px; background:url(../images/more.png) no-repeat left bottom; background-size:cover; padding:60px 0 0 0}
+.more-text {font-weight:bold; font-size:30px; line-height:45px; color:#FFFFFF; max-width:725px}
+.more-link {margin:647px 0 0 0}
+.more-link a {display:inline-block; vertical-align:top; padding:16px 40px; background:#FFFFFF; border-radius:24px; font-weight:600; font-size:30px; line-height:45px; color:#2758A0; text-decoration:none; transition:color 0.2s, background 0.2s}
+.more-link a:hover {background:#286DD2; color:#FFFFFF}
+
+@media (max-width:1599px) {
+    .more {height:569px; background-image:url(../images/more-desktop.png)}
+    .more-link {margin:281px 0 0 0}
+}
+
+@media (max-width:1199px) {
+    .more {height:403px; padding:40px 0 0 0; background-image:url(../images/more-tablet.png)}
+    .more-text {font-size:24px; line-height:36px; max-width:580px}
+    .more-link {margin:182px 0 0 0}
+    .more-link a {border-radius:16px; font-size:24px; line-height:36px}
+}
+
+@media (max-width:767px) {
+    .more {background-image:url(../images/more-480.png)}
+    .more-text {font-size:18px; line-height:27px; max-width:300px}
+    .more-link {margin:173px 0 0 0}
+}
+
+@media (max-width:479px) {
+    .more {height:228px; padding:20px 0 0 0; background-image:url(../images/more-320.png)}
+    .more-text {font-size:14px; line-height:21px; max-width:280px}
+    .more-link {margin:78px 0 0 0}
+    .more-link a {padding:10px 30px; border-radius:12px; font-size:18px; line-height:27px}
+}
+
 .buy {height:935px; background:url(../images/buy.png) no-repeat left bottom; background-size:cover; padding:60px 0 0 0}
 .buy a {display:inline-block; vertical-align:top; padding:20px 60px; background:#2758A0; border-radius:24px; font-weight:600; font-size:48px; line-height:72px; color:#FFFFFF; text-decoration:none; transition:background 0.2s}
 .buy a:hover {background:#286DD2}
