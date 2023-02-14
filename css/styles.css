@@ -122,7 +122,7 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
 .welcome-text p {margin:0; padding:0}
 .welcome-text strong {font-weight:bold}
 
-@media (max-width:1599px) {
+@media (max-width:2599px) {
     .welcome {padding:80px 0 60px 0}
     .realme {margin:3px 0 0 0}
     .realme img {width:auto}
@@ -154,15 +154,15 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
 .slider {font-size:0; line-height:0; letter-spacing:-1px; white-space:nowrap; position:relative; overflow:hidden}
 .slider-item {display:inline-block; vertical-align:top; width:100%; white-space:normal; letter-spacing:0}
 
-.more {height:935px; background:url(../images/more.png) no-repeat left bottom; background-size:cover; padding:60px 0 0 0}
+.more {height:935px; background:url(../images/more.png) no-repeat center bottom; background-size:auto 100%; padding:60px 0 0 0}
 .more-text {font-weight:bold; font-size:30px; line-height:45px; color:#FFFFFF; max-width:725px}
-.more-link {margin:647px 0 0 0}
+.more-link {margin:577px 0 0 0}
 .more-link a {display:inline-block; vertical-align:top; padding:16px 40px; background:#FFFFFF; border-radius:24px; font-weight:600; font-size:30px; line-height:45px; color:#2758A0; text-decoration:none; transition:color 0.2s, background 0.2s}
 .more-link a:hover {background:#286DD2; color:#FFFFFF}
 
 @media (max-width:1599px) {
     .more {height:569px; background-image:url(../images/more-desktop.png)}
-    .more-link {margin:281px 0 0 0}
+    .more-link {margin:211px 0 0 0}
 }
 
 @media (max-width:1199px) {
@@ -173,7 +173,7 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
 }
 
 @media (max-width:767px) {
-    .more {background-image:url(../images/more-480.png); background-size:auto 100%}
+    .more {background-image:url(../images/more-480.png); background-position:left bottom}
     .more-text {font-size:18px; line-height:27px; max-width:300px; margin-left:20px}
     .more-link {margin:173px 0 0 20px}
 }
@@ -187,7 +187,7 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
 }
 
 .buy {height:935px; background:url(../images/buy.png) no-repeat left bottom; background-size:cover; padding:60px 0 0 0}
-.buy a {display:inline-block; vertical-align:top; padding:20px 60px; background:#2758A0; border-radius:24px; font-weight:600; font-size:48px; line-height:72px; color:#FFFFFF; text-decoration:none; transition:background 0.2s}
+.buy a {display:inline-block; vertical-align:top; padding:16px 40px; background:#2758A0; border-radius:24px; font-weight:600; font-size:30px; line-height:45px; color:#FFFFFF; text-decoration:none; transition:background 0.2s}
 .buy a:hover {background:#286DD2}
 
 @media (max-width:1599px) {
@@ -355,7 +355,7 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
 .form-input input:hover {border-color:#2758A0}
 .form-input input:focus {border-color:#2758A0}
 .form-input input.error {border-color:#9E1300}
-label.error {display:block; position:absolute; left:0; right:0; top:100%; margin-top:4px; font-weight:300; font-size:14px; line-height:18px; text-align:right; color:#9E1300}
+label.error {display:block; position:absolute; left:0; right:0; top:100%; margin-top:4px; font-weight:300; font-size:14px; line-height:18px; text-align:right; color:#FF0000}
 
 @media (max-width:479px) {
     .form-input {margin:30px 0 0 0}
@@ -403,7 +403,7 @@ label.error {display:block; position:absolute; left:0; right:0; top:100%; margin
 .form-checkbox input:checked+label.error+span::before {background-position:center}
 .form-checkbox a {color:#2758A0; text-decoration:none; border-bottom:1px solid #2758A0; transition:border-color 0.2s}
 .form-checkbox a:hover {border-bottom-color:transparent}
-.form-checkbox label.error {margin-top:0}
+.form-checkbox label.error {margin-top:0; bottom:auto; right:auto; left:0; top:-24px}
 
 @media (max-width:479px) {
     .form-checkbox {margin:20px 0 0 0; font-size:14px; line-height:21px}
@@ -441,7 +441,7 @@ label.error {display:block; position:absolute; left:0; right:0; top:100%; margin
     .form-submit button {height:50px; font-size:18px; line-height:50px; border-radius:14px}
 }
 
-.result {margin:81px 0 0 0; text-align:center; position:relative}
+.result {position:relative}
 .result.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(221, 241, 255, 0.5) url(../images/loading.svg) no-repeat center}
 .result-icon {display:inline-block; vertical-align:middle}
 .result-icon img {display:block; width:80px}
@@ -456,18 +456,15 @@ label.error {display:block; position:absolute; left:0; right:0; top:100%; margin
 .result-btn a:hover {background:#286DD2}
 
 @media (max-width:1199px) {
-    .result {margin:30px 0 0 0}
     .result-btn {margin:30px 0 0 0}
 }
 
 @media (max-width:767px) {
-    .result {margin:42px 0 0 0}
     .result-btn {margin:42px 0 0 0}
     .result-btn a {border-radius:14px; font-size:24px; line-height:36px}
 }
 
 @media (max-width:479px) {
-    .result {margin:20px 0 0 0}
     .result-icon {display:block; text-align:center}
     .result-icon img {width:48px; margin:0 auto}
     .result-title {display:block; margin:5px 0 0 0; font-size:18px; line-height:26px; max-width:none; text-align:center}
@@ -545,10 +542,10 @@ label.error {display:block; position:absolute; left:0; right:0; top:100%; margin
     .prizes-list-item-text {margin:10px 0 0 0; font-size:20px; line-height:24px}
 }
 
-.footer {background:#F6F9FB; margin:80px 0 0 0; padding:80px 0; font-weight:normal; font-size:22px; line-height:33px; color:#030445}
+.footer {background:#F6F9FB; margin:80px 0 0 0; padding:80px 0; font-weight:normal; font-size:18px; line-height:30px; color:#030445}
 .footer p {margin:33px 0 0 0; padding:0}
 .footer p:first-child {margin:0}
-.footer-policy-link {margin:20px 0 0 0; font-weight:300; font-size:20px; line-height:30px}
+.footer-policy-link {margin:20px 0 0 0; font-weight:300; font-size:18px; line-height:30px}
 .footer-policy-link a {color:#2758A0; text-decoration:none; border-bottom:1px solid #2758A0; transition:border-color 0.2s}
 .footer-policy-link a:hover {border-bottom-color:transparent}
 
