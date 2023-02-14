@@ -113,22 +113,16 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
     .container {width:280px}
 }
 
-.welcome {background:#DDF1FF; padding:60px 0; color:#030445}
+.welcome {background:#DDF1FF; padding:40px 0; color:#030445}
 .realme {float:right; line-height:0}
-.realme img {width:167px}
 .welcome-header {font-weight:normal; font-size:30px; line-height:35px; letter-spacing:0.05em; text-transform:uppercase; padding:6px 0 0 0}
-.welcome-title {margin:26px 0 0 0; font-weight:bold; font-size:120px; line-height:145px}
-.welcome-text {margin:20px 0 0 0; font-weight:normal; font-size:30px; line-height:45px}
+.welcome-title {margin:20px 0 0 0; font-weight:bold; font-size:70px; line-height:85px}
+.welcome-text {margin:20px 0 0 0; font-weight:normal; font-size:22px; line-height:33px}
 .welcome-text p {margin:0; padding:0}
 .welcome-text strong {font-weight:bold}
 
-@media (max-width:2599px) {
-    .welcome {padding:80px 0 60px 0}
-    .realme {margin:3px 0 0 0}
-    .realme img {width:auto}
-    .welcome-header {padding:0}
-    .welcome-title {font-size:60px; line-height:73px; margin:20px 0 0 0}
-    .welcome-text {font-size:22px; line-height:33px}
+@media (max-width:1599px) {
+    .welcome-title {font-size:60px; line-height:73px}
 }
 
 @media (max-width:1199px) {
@@ -154,15 +148,15 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
 .slider {font-size:0; line-height:0; letter-spacing:-1px; white-space:nowrap; position:relative; overflow:hidden}
 .slider-item {display:inline-block; vertical-align:top; width:100%; white-space:normal; letter-spacing:0}
 
-.more {height:935px; background:url(../images/more.png) no-repeat center bottom; background-size:auto 100%; padding:60px 0 0 0}
+.more {height:451px; background:url(../images/more.png) no-repeat center; background-size:auto 100%; padding:40px 0 0 0}
 .more-text {font-weight:bold; font-size:30px; line-height:45px; color:#FFFFFF; max-width:725px}
-.more-link {margin:577px 0 0 0}
+.more-link {margin:203px 0 0 0}
 .more-link a {display:inline-block; vertical-align:top; padding:16px 40px; background:#FFFFFF; border-radius:24px; font-weight:600; font-size:30px; line-height:45px; color:#2758A0; text-decoration:none; transition:color 0.2s, background 0.2s}
 .more-link a:hover {background:#286DD2; color:#FFFFFF}
 
 @media (max-width:1599px) {
-    .more {height:569px; background-image:url(../images/more-desktop.png)}
-    .more-link {margin:211px 0 0 0}
+    .more {height:463px; background-image:url(../images/more-desktop.png)}
+    .more-link {margin:215px 0 0 0}
 }
 
 @media (max-width:1199px) {
@@ -186,17 +180,17 @@ ul > li::before {content:""; display:block; position:absolute; left:0; top:13px;
     .more-link a {padding:10px 30px; border-radius:12px; font-size:18px; line-height:27px}
 }
 
-.buy {height:935px; background:url(../images/buy.png) no-repeat left bottom; background-size:cover; padding:60px 0 0 0}
+.buy {height:451px; background:url(../images/buy.png) no-repeat center; background-size:auto 100%; padding:60px 0 0 0}
 .buy a {display:inline-block; vertical-align:top; padding:16px 40px; background:#2758A0; border-radius:24px; font-weight:600; font-size:30px; line-height:45px; color:#FFFFFF; text-decoration:none; transition:background 0.2s}
 .buy a:hover {background:#286DD2}
 
 @media (max-width:1599px) {
-    .buy {height:569px; background-image:url(../images/buy-desktop.png)}
+    .buy {height:463px; background-image:url(../images/buy-desktop.png)}
     .buy a {padding:16px 40px; font-size:30px; line-height:45px}
 }
 
 @media (max-width:1199px) {
-    .buy {height:403px; padding:40px 0 0 0; background-image:url(../images/buy-tablet.png)}
+    .buy {height:403px; padding:40px 0 0 0; background-image:url(../images/buy-tablet.png); background-position:left bottom; background-size:cover}
     .buy a {padding:12px 40px; border-radius:16px; font-size:24px; line-height:36px}
 }
 
